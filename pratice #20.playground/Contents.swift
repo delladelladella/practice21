@@ -1,34 +1,13 @@
 import UIKit
-//In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
 
-//The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
-func animals(_ chickens: Int, _ cows: Int, _ pigs: Int) -> Int {
-    var chickenLegs: Int
-    var cowLegs: Int
-    var pigLegs: Int
-    
-    chickenLegs = chickens * 2
-    cowLegs = cows * 4
-    pigLegs = pigs * 4
-    
-    let totalLegs = chickenLegs + cowLegs + pigLegs
-    return totalLegs
+// Writing a function to be as minimal as possible.
+func isEven(_ n: Int) -> Bool {
+     return n % 2 == 0
 }
 
-
-//Given two arguments, return an array which contains these two arguments.
-func makePair(_ num1: Int, _ num2: Int) -> [Int] {
-    var newArray = [Int]()
-    newArray.append(num1)
-    newArray.append(num2)
-    
-    return newArray
-}
-
-
-//Create a function that takes three arguments prob, prize, pay and returns true if prob * prize > pay; otherwise return false.
-func profitableGamble(_ prob: Float, _ prize: Float, _ pay: Float) -> Bool {
-    if prob * prize > pay {
+//Writing a function that uses && operator.
+func and(_ a: Bool, _ b: Bool) -> Bool {
+    if a && b == true {
         return true
     } else {
         return false
@@ -36,29 +15,23 @@ func profitableGamble(_ prob: Float, _ prize: Float, _ pay: Float) -> Bool {
 }
 
 
-//Write a function that returns the string "something" joined with a space " " and the given argument a.
-func giveMeSomething(_ a: String) -> String {
-    var something = "something \(a)"
-    return something
+//Debugged a function to check if given parameter is equal to 7.
+func isSeven(_ x: Int) -> Bool {
+    return x == 7
 }
 
-//Create a function to concatenate two integer arrays.
-func concat(_ arr1: [Int], _ arr2: [Int]) -> [Int] {
-    var list1: [Int]
-    var list2: [Int]
-    var list3: [Int]
-    
-    list1 = arr1
-    list2 = arr2
-    list3 = list1 + list2
-    return list3
+
+//Calcuating total frames.
+func frames(_ minutes: Int, _ fps: Int) -> Int {
+    return minutes * fps * 60
 }
 
-//Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
-func divisible(_ num: Int) -> Bool {
-    if num % 100 == 0 {
-        return true
-    } else {
+//Creating a function that reverse a boolean.
+func reverse(_ flip: Bool) -> Bool {
+    if flip == true {
         return false
+    } else {
+        return true
     }
 }
+
